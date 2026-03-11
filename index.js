@@ -14,8 +14,9 @@ const Pino = require('pino')
 const readline = require('readline')
 const { handleMessage } = require('./lib/handler')
 
-const store = makeInMemoryStore({ logger: Pino().child({ level: 'silent', stream: 'store' }) })
-global.conns = []
+const store = makeInMemoryStore({ 
+  logger: Pino().child({ level: 'silent', stream: 'store' }) 
+})
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
 const question = (text) => new Promise((resolve) => rl.question(text, resolve))
@@ -125,7 +126,7 @@ async function startKeqing() {
 19. .kick
 20. .add
 21. .hidetag
-22. .group (open/close)
+22. .group
 23. .setppgc
 24. .setname
 25. .linkgc
