@@ -5,9 +5,12 @@ const {
   fetchLatestBaileysVersion,
   makeCacheableSignalKeyStore,
   jidDecode,
-  makeInMemoryStore,
   PHONENUMBER_MCC
 } = require('@whiskeysockets/baileys')
+
+// Solusi Error TypeError: Ambil langsung dari objek Baileys
+const Baileys = require('@whiskeysockets/baileys')
+const makeInMemoryStore = Baileys.makeInMemoryStore || require('@whiskeysockets/baileys').makeInMemoryStore
 
 const fs = require('fs')
 const Pino = require('pino')
