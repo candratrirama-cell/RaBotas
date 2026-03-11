@@ -1,64 +1,43 @@
 # ⚡ KEQING BOT MULTI-DEVICE ⚡
 
-Bot WhatsApp otomatis yang ringan, cepat, dan modern. Menggunakan basis library `@whiskeysockets/baileys` dengan fitur utama **Pairing Code** (Login tanpa scan QR).
+Bot WhatsApp modern berbasis Node.js dengan fitur **Pairing Code**. Cepat, ringan, dan tanpa perlu scan QR!
 
 ---
 
-## 📱 KONTAK DEVELOPER
-Jika ada kendala instalasi atau ingin request fitur, hubungi owner:
+## 📱 KONTAK OWNER (SUPPORT)
+Hubungi pengembang jika ada kendala atau ingin request fitur:
 
 * **Owner:** Rama
 * **WhatsApp:** [+62 882-0085-19349](https://wa.me/62882008519349)
-* **WhatsApp Channel:** [Follow Link](https://whatsapp.com/channel/0029Vb7658sInlqLIQAY140R)
+* **WhatsApp Channel:** [Klik Follow](https://whatsapp.com/channel/0029Vb7658sInlqLIQAY140R)
 * **GitHub:** [candratrirama-cell](https://github.com/candratrirama-cell)
 
 ---
 
 ## 🛠️ DAFTAR 30 FITUR FINAL
-Berikut adalah fitur yang sudah tertanam di dalam sistem Keqing Bot:
-
-1. **.jadibot** - Numpang bot (Clone)
-2. **.stopjadibot** - Berhenti jadi bot
-3. **.listjadibot** - Cek bot aktif
-4. **.tiktok** - Download Video TT
-5. **.igdl** - Download Instagram
-6. **.ytmp3** - Download Lagu YT
-7. **.ytmp4** - Download Video YT
-8. **.fbdown** - Download Facebook
-9. **.twitter** - Download X/Twitter
-10. **.gitclone** - Clone Github
-11. **.ai** - Tanya Jawab AI
-12. **.brat** - Stiker Teks Brat
-13. **.sticker** - Gambar ke Stiker
-14. **.remini** - HD-kan Gambar
-15. **.ocr** - Ambil teks di Foto
-16. **.nulis** - Nulis di Buku Otomatis
-17. **.translate** - Terjemah Bahasa
-18. **.kalkulator** - Hitung Cepat
-19. **.kick** - Tendang Member
-20. **.add** - Tambah Member
-21. **.hidetag** - Tag Semua Member
-22. **.group** - Buka/Tutup Grup
-23. **.setppgc** - Ganti Foto Grup
-24. **.setname** - Ganti Nama Grup
-25. **.linkgc** - Ambil Link Grup
-26. **.self** - Mode Pribadi
-27. **.public** - Mode Umum
-28. **.bc** - Kirim Pesan Siaran
-29. **.eval** - Cek Script (Owner)
-30. **.shutdown** - Matikan Bot
+| No | Fitur | No | Fitur | No | Fitur |
+|---|---|---|---|---|---|
+| 1 | .jadibot | 11 | .ai | 21 | .hidetag |
+| 2 | .stopjadibot | 12 | .brat | 22 | .group |
+| 3 | .listjadibot | 13 | .sticker | 23 | .setppgc |
+| 4 | .tiktok | 14 | .remini | 24 | .setname |
+| 5 | .igdl | 15 | .ocr | 25 | .linkgc |
+| 6 | .ytmp3 | 16 | .nulis | 26 | .self |
+| 7 | .ytmp4 | 17 | .translate | 27 | .public |
+| 8 | .fbdown | 18 | .kalkulator | 28 | .bc |
+| 9 | .twitter | 19 | .kick | 29 | .eval |
+| 10 | .gitclone | 20 | .add | 30 | .shutdown |
 
 ---
 
-## 🚀 PANDUAN INSTALASI DARI NOL (STEP-BY-STEP)
+## 🚀 CARA INSTALASI (Tinggal Copy-Paste)
 
-Ikuti langkah-langkah di bawah ini agar bot berjalan tanpa error:
+Buka Termux atau Terminal VPS kamu, lalu salin dan tempel perintah di bawah ini secara berurutan:
 
-### Langkah 1: Persiapan Aplikasi
-Jika kamu menggunakan HP, instal aplikasi **Termux** dari F-Droid (bukan PlayStore). Jika menggunakan VPS, pastikan sudah login via SSH.
-
-### Langkah 2: Update & Instal Package Dasar
-Buka Termux/Terminal, lalu ketik perintah ini satu per satu:
+### 1. Install Bahan & Clone Script
 ```bash
-pkg update && pkg upgrade
+pkg update && pkg upgrade -y
 pkg install nodejs git ffmpeg -y
+git clone https://github.com/candratrirama-cell/RaBotas
+cd RaBotas
+node index.js
