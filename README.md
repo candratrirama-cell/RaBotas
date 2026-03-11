@@ -1,32 +1,64 @@
 # ⚡ KEQING BOT MULTI-DEVICE ⚡
 
-
-
-Keqing Bot adalah asisten otomatis WhatsApp berbasis Node.js menggunakan library `@whiskeysockets/baileys`. Bot ini menggunakan teknologi terbaru untuk memastikan koneksi stabil, respons cepat, dan fitur yang sangat lengkap.
+Bot WhatsApp otomatis yang ringan, cepat, dan modern. Menggunakan basis library `@whiskeysockets/baileys` dengan fitur utama **Pairing Code** (Login tanpa scan QR).
 
 ---
 
-## 📱 INFORMASI KONTAK OWNER
-Jika kamu menemukan bug atau ingin melakukan upgrade fitur, silakan hubungi pengembang resmi:
+## 📱 KONTAK DEVELOPER
+Jika ada kendala instalasi atau ingin request fitur, hubungi owner:
 
-* **Nama:** Rama
-* **WhatsApp:** [+62 882-0085-1934-9](https://wa.me/62882008519349)
-* **WhatsApp Channel:** [Klik di Sini](https://whatsapp.com/channel/0029Vb7658sInlqLIQAY140R)
+* **Owner:** Rama
+* **WhatsApp:** [+62 882-0085-19349](https://wa.me/62882008519349)
+* **WhatsApp Channel:** [Follow Link](https://whatsapp.com/channel/0029Vb7658sInlqLIQAY140R)
 * **GitHub:** [candratrirama-cell](https://github.com/candratrirama-cell)
 
 ---
 
-## 🚀 PANDUAN INSTALASI LENGKAP
+## 🛠️ DAFTAR 30 FITUR FINAL
+Berikut adalah fitur yang sudah tertanam di dalam sistem Keqing Bot:
 
-### 1. Persiapan Environment
-Pastikan VPS atau Termux kamu sudah menginstal:
-* **Node.js v18+**
-* **Git**
-* **FFmpeg**
+1. **.jadibot** - Numpang bot (Clone)
+2. **.stopjadibot** - Berhenti jadi bot
+3. **.listjadibot** - Cek bot aktif
+4. **.tiktok** - Download Video TT
+5. **.igdl** - Download Instagram
+6. **.ytmp3** - Download Lagu YT
+7. **.ytmp4** - Download Video YT
+8. **.fbdown** - Download Facebook
+9. **.twitter** - Download X/Twitter
+10. **.gitclone** - Clone Github
+11. **.ai** - Tanya Jawab AI
+12. **.brat** - Stiker Teks Brat
+13. **.sticker** - Gambar ke Stiker
+14. **.remini** - HD-kan Gambar
+15. **.ocr** - Ambil teks di Foto
+16. **.nulis** - Nulis di Buku Otomatis
+17. **.translate** - Terjemah Bahasa
+18. **.kalkulator** - Hitung Cepat
+19. **.kick** - Tendang Member
+20. **.add** - Tambah Member
+21. **.hidetag** - Tag Semua Member
+22. **.group** - Buka/Tutup Grup
+23. **.setppgc** - Ganti Foto Grup
+24. **.setname** - Ganti Nama Grup
+25. **.linkgc** - Ambil Link Grup
+26. **.self** - Mode Pribadi
+27. **.public** - Mode Umum
+28. **.bc** - Kirim Pesan Siaran
+29. **.eval** - Cek Script (Owner)
+30. **.shutdown** - Matikan Bot
 
-### 2. Cara Menjalankan
+---
+
+## 🚀 PANDUAN INSTALASI DARI NOL (STEP-BY-STEP)
+
+Ikuti langkah-langkah di bawah ini agar bot berjalan tanpa error:
+
+### Langkah 1: Persiapan Aplikasi
+Jika kamu menggunakan HP, instal aplikasi **Termux** dari F-Droid (bukan PlayStore). Jika menggunakan VPS, pastikan sudah login via SSH.
+
+### Langkah 2: Update & Instal Package Dasar
+Buka Termux/Terminal, lalu ketik perintah ini satu per satu:
 ```bash
-git clone [https://github.com/candratrirama-cell/RaBotas](https://github.com/candratrirama-cell/RaBotas)
-cd RaBotas
-npm install
-node index.js
+pkg update && pkg upgrade
+pkg install nodejs git ffmpeg -y
